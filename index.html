@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Christine</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link
+  href="https://fonts.googleapis.com/css?family=Open+Sans"
+  rel="stylesheet" />
+</head>
+
+<body>
+    <h2>Christine Guarnieri</h2>
+    <img src="images/profile.jpeg" alt="Photograph of Self" id = 'image1'/>
+    <p> Hello! My name is Christine Guarnieri. I am currently a third year student at Northeastern University studying
+        Data Science and Business Administration with a concentration in Finance. I am particularly interested in using
+        data science and machine learning to gain insight into financial markets. Outside of my major, I am interested
+        in the legal field. I am a part of Northeastern’s Mock Trial team (see below for a team photo), and I have competed in Mock Trial since I was
+        in high school. Apart from my involvement at Northeastern, I enjoy going to concerts in the greater Boston area
+        as well as reading a good book. </p>
+
+    <p>On the topic of books, the last few books I read are:</p>
+
+        <ul>
+          <li>Goldfinch by Donna Tart</li>
+          <li>Malibu Rising by Taylor Jenkins Reid</li>
+          <li>Normal People by Sally Rooney</li>
+        </ul>
+        
+        <p> just to name a few.</p>
+
+          <p>For more information, check out <a href="https://www.linkedin.com/in/christine-guarnieri/">
+            my LinkedIn. </a> </p>
+        
+        <button2 id = "funFactButton" onclick="funFact()">Click me to reveal a fun fact!</button2>
+        
+        
+        <script>
+        function funFact() {
+          document.getElementById("funFactButton").innerHTML = "Fun Fact: I am from Virginia!";
+        }
+        </script>
+        </body>
+    <body2>
+    <p>As promised, click the button below to get an image of my team!</p>
+     
+    <img src="images/team.jpeg" alt="Photograph of Team" id = 'image2' style = 'display: none; width: 500px'/>
+
+
+    <button type = 'button' onclick = 'show()' id="imageButton" >Show Image</button>
+      <script>
+        function show() {
+            document.getElementById('image2').style.display = "block";
+            document.getElementById('imageButton').style.display = "none";
+        }
+    </script>
+    
+</body2>
+
+
+
+
+</html>
